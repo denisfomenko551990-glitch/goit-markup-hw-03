@@ -29,7 +29,7 @@ a {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -37,6 +37,9 @@ a {
 
 /*header*/
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .header-navigation {
   display: flex;
   align-items: center;
@@ -218,9 +221,7 @@ a {
 .team-list-item {
   background-color: #fff;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px;
   width: 264px;
-  height: 380px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
@@ -270,13 +271,16 @@ a {
   column-gap: 24px;
   flex-wrap: wrap;
 }
+
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
+}
+
 .portfolio-list-wrap {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  width: 360px;
-  height: 120px;
 }
 .portfolio-list-title {
   font-weight: 500;
@@ -301,7 +305,7 @@ a {
 }
 
 .footer-logo {
-  display: block;
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
