@@ -322,7 +322,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
-  padding: 16px 0;
+  margin-bottom: 16px;
 }
 
 .footer-logo-web {
